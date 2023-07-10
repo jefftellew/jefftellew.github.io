@@ -27,6 +27,9 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="./res/jeffrey_tellew_resume.pdf">Projects</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="./res/jeffrey_tellew_resume.pdf">Resume</a>
       </li>
     </ul>
@@ -39,80 +42,216 @@
   </video>
   <div class="container">
     <h1 class="bold">jefftellew.github.io</h1>
-    <p>The personal page/side project of Jeffrey Tellew</p>
+    <p>The personal page/side project of Jeff Tellew</p>
     <br/>
-    <p>
-      <a class="btn btn-primary btn-lg img-btn" href="./res/jeffrey_tellew_resume.pdf" role="button" download>
-        <img class="icon-square" src="./res/down_arrow.png" height="75px" alt="[Resume Download Button]"/>
-        <span>Download Resume</span>
-      </a>
-    </p>
+    <div class="row">
+      <div class="col-3">
+        <p>
+          <a class="btn btn-primary btn-lg img-btn" href="./res/jeffrey_tellew_resume.pdf" role="button" download>
+            <img class="icon-square" src="./res/down_arrow.png" height="50px" alt="[Resume Download Button]"/>
+            <span>Resume</span>
+          </a>
+        </p>
+      </div>
+      <div class="col-3">
+        <p>
+          <a class="btn btn-secondary btn-lg img-btn" href="https://github.com/jefftellew" role="button">
+            <img class="icon-square" src="./res/GitHub-Mark-64px.png" height="50px" alt="[GitHub Button]"/>
+            <span>GitHub</span>
+          </a>
+        </p>
+      </div>
+      <div class="col-3">
+        <p>
+          <a class="btn btn-tertiary btn-lg img-btn" href="https://www.linkedin.com/in/jeffrey-tellew/" role="button">
+            <img class="icon-square" src="./res/LI-In-Bug.png" height="50px" alt="[LinkedIn Button]"/>
+            <span>LinkedIn</span>
+          </a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="container border-bottom">
+  <div class="row d-flex align-items-center">
+    <div class="col-4">
+      <img src="./res/headshot.jpg" width="100%"/>
+    </div>
+    <div class="col-8">
+      <!-- About Me header -->
+      <div class="row d-flex align-items-left">
+        <img src="./res/face.svg" height="50px" alt="[About Me Icon]"/>
+        <h1>About me</h1>
+      </div>
+      <br/>
+
+      <!-- About Me content -->
+      <h3>Hi, I'm <b>Jeff</b>!</h3>
+      <p>
+        I'm a full-stack software engineer from San Diego, CA who loves to program, game, travel, and exercise.
+        I've worked on a wide range of projects from more typical things like web development and Android apps to newer fields like blockchain and augmented/virtual reality.
+      </p>
+      <br/>
+
+      <!-- Education header -->
+      <div class="row d-flex align-items-left">
+        <img src="./res/school-24px.svg" height="50px" alt="[Education Icon]"/>
+        <h1>Education</h1>
+      </div>
+
+      <!-- Education content -->
+      <p>I graduated in 2021 with a B.S. in Computer Science from the University of California, Santa Barbara.</p>
+      <p>I also had the opportunity to study abroad at Lund University in Lund, Sweden, where I got to experience new things like functional public transportation and temperatures below 50° F.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container border-bottom">
+  <div class="row d-flex align-items-left">
+    <img src="./res/experience.svg" height="50px" alt="[Projects Icon]"/>
+    <h1>Projects</h1>
+  </div>
+  <br/>
+
+  <!-- CertificateChain -->
   <div class="row">
-    <div class="col-md-4">
-      <img src="./res/school-24px.svg" height="50px" alt="[Education Icon]"/>
-      <h3 class="bold">Education</h3>
-      <p>I'm a Computer Science major at UC Santa Barbara, expecting to graduate in 2021. As of December 2019, my GPA is 3.64.</p>
-      <p>Starting in January 2020, I will be studying at Lund University in Sweden. I'm excited to meet new people, experience new cultures, and finally take an Artificial Intelligence class!</p>
+    <div class="col-4 align-self-center">
+      <img src="./res/certificatechain.jpeg" width="100%"/>
     </div>
-    <div class="col-md-4">
-      <img src="./res/thumb_up-24px.svg" height="50px" alt="[Experience Icon]"/>
-      <h3 class="bold">Experience</h3>
-      <p>In the summer of 2019, I had the privilege of being selected for the UCSD DBMI Summer Internship Program. I worked on an experimental system using Ethereum and smart contracts to store training certificates on the blockchain.</p>
-      <p>The previous summer, I worked in the UCSD Sim Center on an augmented reality ultrasound training program. We developed a system to make it easier for medical students to learn difficult ultrasound procedures by using augmented reality to essentially give them x-ray vision.</p>
+
+    <div class="col-8">
+      <h3>CertificateChain</h3>
+      <p>
+        As part of my internship at the UC San Diego Division of Biomedical Informatics (DBMI), I created CertificateChain, a decentralized database system built on the <span class="skill">Ethereum Blockchain</span>, culminating in a <a href="https://doi.org/10.1093/jamiaopen/ooac019">publication in JAMIA Open</a>.
+      </p>
+      <p>
+        Biomedical informatics requires the usage of public health datasets, which typically require certifications before researchers are granted access.
+        Prior to this, DBMI staff had to request these certificates by email, resulting in a number of problems outlined in the paper.
+        CertificateChain used <span class="skill">Solidity</span> smart contracts to store data to the blockchain, where it could be easily accessed by staff or viewed by others via a web app that I created with <span class="skill">Java</span> and <span class="skill">Spring Boot</span>.
+      </p>
+
+      <p>
+        To perform data collection in preparation for the paper, I wrote <span class="skill">BASH</span> scripts to automate testing which ran on across a few <span class="skill">AWS Virtual Machines</span>.
+        I then did the data analysis with <span class="skill">R</span> and created graphics for the paper.
+      </p>
+
+      <p>
+        <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/certificatechain" role="button" download>
+          <img class="icon-square" src="./res/GitHub-Mark-64px.png" height="30px" alt="[CertificateChain GitHub button]"/>
+          <span>View the project on GitHub</span>
+        </a>
+      </p>
     </div>
-    <div class="col-md-4">
-      <img src="./res/GitHub-Mark-64px.png" height="50px" alt="[GitHub Icon]"/>
-      <h3 class="bold">GitHub</h3>
-      <p>You can <a href="https://www.github.com/jefftellew">look at my GitHub profile</a> if you want. Pretty much all of my repos are private, but you can go look at the source code for this website if you want. I'm not gonna lie, I mostly recycled it from the code I wrote for my project last summer.</p>
-      <p>Maybe <a href="./res/jeffrey_tellew_resume.pdf" download>download my resume</a> instead?</p>
+  </div>
+
+  <br/>
+
+  <!-- UltraTracker -->
+  <div class="row">
+    <div class="col-4 align-self-center">
+      <img src="./res/ultratracker.gif" width="100%"/>
+    </div>
+
+    <div class="col-8">
+      <h3>UltraTracker</h3>
+      <p>
+        During another internship at UCSD, this time in the Simulation Training Center (STC), I worked on UltraTracker, an <span class="skill">augmented reality</span> training system for students at the UCSD School of Medicine.
+      </p>
+      <p>
+        Soon-to-be doctors at the STC perform training exercises intended to give them experience in real-life situations without worrying about real-life consequences.
+        One of the situations they train for is called a <a href="https://my.clevelandclinic.org/health/treatments/23927-central-venous-catheter">central line</a>, and is notoriously difficult to learn.
+      </p>
+
+      <p>
+        UltraTracker aimed to ease this difficult learning curve in two different ways.
+        First, it gave students a real-time overlay via augmented reality of their ultrasound data, motion-tracked to the position of the ultrasound probe.
+        It displayed metrics via <span class="skill">Qt</span> and <span class="skill">C++</span>, such as needle-probe alignment, to help them learn more quickly with real-time empirical feedback.
+        Second, it allowed experienced doctors to replay the trainees practice attempts by re-rendering their actions using <span class="skill">OpenGL</span>.
+      </p>
+
+      <p>
+        Unfortunately, the technology is still private, so I cannot link the code here.
+      </p>
+    </div>
+  </div>
+
+  <br/>
+
+  <!-- Prometheus -->
+  <div class="row">
+    <div class="col-4 align-self-center">
+      <img src="./res/prometheus.jpg" width="100%"/>
+    </div>
+
+    <div class="col-8">
+      <h3>Prometheus</h3>
+      <p>
+        Though I had dabbled in game modding and development before (see below), my first formal step on the path to becoming software engineer was when I signed up for AP Computer Science in 2015.
+        The end result of that class was a simple tower defense game, named Prometheus.
+      </p>
+      <p>
+        Written entirely in <span class="skill">Java</span>, Prometheus is far from a masterpiece -- it was, after all, the first thing I ever truly made with code. It doesn't elicit the same reaction you might have when you read about blockchains or augmented reality.
+        And yet, I can't bring myself to leave it off this page because of a much simpler reason.
+        To me, this game represents the beginning of my love for something that I would go on to pursue most likely for the rest of my life. Something that I hope that you, dear reader, once experienced as well.
+      </p>
+
+      <p>
+        If you'd like to play the game, you'll need <a href="https://www.java.com/en/download/windows_manual.jsp">a JRE installation</a>.
+      </p>
+
+      <div class="row">
+        <div class="col-5">
+          <p>
+            <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/prometheus/tree/master" role="button" download>
+              <img class="icon-square" src="./res/GitHub-Mark-64px.png" height="30px" alt="[Prometheus GitHub button]"/>
+              <span>View the project on GitHub</span>
+            </a>
+          </p>
+        </div>
+        <div class="col-5">
+          <p>
+            <a class="btn btn-secondary btn-md img-btn" href="./res/TowerDefense.jar" role="button" download>
+              <img class="icon-square" src="./res/down_arrow.png" height="30px" alt="[Prometheus Download button]"/>
+              <span>Download the Game</span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br/>
+
+  <!-- Maps -->
+  <div class="row">
+    <div class="col-4 align-self-center">
+      <img src="./res/apex.png" width="100%"/>
+    </div>
+
+    <div class="col-8">
+      <h3>Team Fortress 2 Maps</h3>
+      <p>
+        In late 2014, I organized a community Team Fortress 2 (TF2) tournament where participants from around the globe competed against each other to see who was the best of the best.
+        In this tournament, the winner was decided by speed. The person with the fastest time to complete three different levels took home the first place prize.
+      </p>
+
+      <p>
+        In addition to organizing community crowdfunding for prizes, scheduling, and other administrative duties, I created one of the custom levels for the tournament.
+        This was the culmination of what had been about 3 years of developing what are known as "maps" for the game, the worlds within which players actually play the game.
+      </p>
+
+      <p>
+        This interesting in creating my own content for Valve's <span class="skill">Source Engine</span> using their <span class="skill">Hammer Editor</span> was the first time I dipped my toes in the vast ocean of computer science.
+      </p>
     </div>
   </div>
 </div>
 
-<div class="container border-bottom">
-  <h1>Technologies Used</h1>
-  <div class="container">
-    <div class="row d-flex align-items-center">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://logoeps.com/wp-content/uploads/2011/06/java-logo-vector.png" class="img-fluid" alt="[Java Logo]">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://freepngimg.com/download/c++/6-2-c++-free-download-png.png" class="img-fluid" alt="[C++ Logo]">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://sixpl.com/wp-content/uploads/2018/05/solidity-1520540026519.png" class="img-fluid" alt="[Solidity Logo]">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/724px-R_logo.svg.png" class="img-fluid" alt="[R Logo]">
-      </div>
-    </div>
-  </div>
+<br/>
 
-  <div class="container">
-    <div class="row d-flex align-items-center">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://pngimage.net/wp-content/uploads/2018/05/ethereum-logo-png-8.png" class="img-fluid" alt="[Ethereum Logo]">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://4.bp.blogspot.com/-f2oWXhCTQ_A/WWFp-SNLLjI/AAAAAAAAA9c/7u2AdiKVe7MNOy4DaXo-sg7lp_AI6-tFgCPcBGAYYCw/s1600/download.png" class="img-fluid" alt="[SQL Logo]">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://www.pngkit.com/png/full/259-2592742_clip-art-free-mobile-app-development-transprent-png.png" class="img-fluid" alt="[Android Studio Logo]">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Firebase_Logo.png" class="img-fluid" alt="[Firebase Logo]">
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <h1>About This Site</h1>
-  <p>This site was mostly made for fun when I was bored. Honestly, if you're reading this... how did you even find it? I'm impressed. Anyways, hire me!</p>
+<div class="row justify-content-center">
+  <p>Header animation by <a href="https://www.beeple-crap.com/">Beeple</a>. Icons from <a href="https://www.svgrepo.com/">svgrepo.com</a> or their respective official websites.</p>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
