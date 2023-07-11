@@ -54,6 +54,11 @@ ul {
     font-weight: bold;
 }
 
+.project-img {
+    border: 3px solid var(--main-color);
+    border-radius: 5px;
+}
+
 /*
 ==========================================================================
  *** JUMBOTRON STYLES ***
