@@ -38,3 +38,8 @@ Thumbs.db
 
 # Exception -- need to upload Tower Defense game (Prometheus)
 !TowerDefense.jar
+
+# IDE files #
+##############
+.idea/
+*.iml

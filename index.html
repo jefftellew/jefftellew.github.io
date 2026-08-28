@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,14 +7,24 @@
 
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,400,600,700" rel="stylesheet">
 
-  <title>jefftellew.github.io</title>
+  <title>Jeff Tellew — Software Engineer</title>
+  <meta name="description" content="Jeff Tellew is a full-stack software engineer in San Diego, CA. Projects spanning drone defense systems, blockchain, augmented reality, and Android." />
+
+  <link rel="icon" href="res/icons/face.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jefftellew.github.io/" />
+  <meta property="og:title" content="Jeff Tellew — Software Engineer" />
+  <meta property="og:description" content="Full-stack software engineer in San Diego, CA. Projects spanning drone defense systems, blockchain, augmented reality, and Android." />
+  <meta property="og:image" content="https://jefftellew.github.io/res/img/jaeger.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="/">
     <span>JEFF<strong>TELLEW</strong></span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,25 +40,24 @@
         <a class="nav-link" href="#projects-header">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="res/downloads/jeff_tellew_resume.pdf">Resume</a>
+        <a class="nav-link" href="res/downloads/jeff_tellew_resume.pdf" target="_blank" rel="noopener">Resume</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="jumbotron video-background">
-  <video class="jumbotron-video" preload muted autoplay loop>
+  <video class="jumbotron-video" preload="auto" muted autoplay loop playsinline>
     <source src="./res/beeple_built.mp4" type="video/mp4">
   </video>
   <div class="container">
     <h1 class="bold">jefftellew.github.io</h1>
-    <p>The personal page of Jeff Tellew</p>
-    <br/>
+    <p class="mb-4">The personal page of Jeff Tellew</p>
     <div class="row">
       <div class="col-12 col-sm-4">
         <p>
           <a class="btn btn-primary btn-lg img-btn" href="res/downloads/jeff_tellew_resume.pdf" role="button" download>
-            <img class="icon-square" src="res/icons/down_arrow.svg" height="50px" alt="[Resume Download Button]"/>
+            <img class="icon-square" src="res/icons/down_arrow.svg" height="50px" alt=""/>
             <span>Resume</span>
           </a>
         </p>
@@ -56,7 +65,7 @@
       <div class="col-12 col-sm-4">
         <p>
           <a class="btn btn-primary btn-lg img-btn" href="https://github.com/jefftellew" role="button">
-            <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="50px" alt="[GitHub Button]"/>
+            <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="50px" alt=""/>
             <span>GitHub</span>
           </a>
         </p>
@@ -64,7 +73,7 @@
       <div class="col-12 col-sm-4">
         <p>
           <a class="btn btn-primary btn-lg img-btn" href="https://www.linkedin.com/in/jeffrey-tellew/" role="button">
-            <img class="icon-square" src="res/icons/linkedin.svg" height="50px" alt="[LinkedIn Button]"/>
+            <img class="icon-square" src="res/icons/linkedin.svg" height="50px" alt=""/>
             <span>LinkedIn</span>
           </a>
         </p>
@@ -76,15 +85,14 @@
 <div class="container border-bottom">
   <div class="row d-flex align-items-center">
     <div class="col-8 offset-2 col-md-4 offset-md-0 mb-3 mb-md-0">
-      <img src="res/img/me_sena_momo.jpg" width="100%" class="project-img"/>
+      <img src="res/img/me_sena_momo.jpg" width="100%" class="project-img" alt="Jeff Tellew with two friends"/>
     </div>
     <div class="col-12 col-md-8">
       <!-- About Me header -->
-      <div class="d-flex align-items-center">
-        <img src="res/icons/face.svg" height="50px" alt="[About Me Icon]"/>
-        <h1>About me</h1>
+      <div class="d-flex align-items-center section-heading">
+        <img src="res/icons/face.svg" height="50px" alt=""/>
+        <h2>About me</h2>
       </div>
-      <br/>
 
       <!-- About Me content -->
       <h3>Hi, I'm <b>Jeff</b>!</h3>
@@ -92,12 +100,11 @@
         I'm a full-stack software engineer from San Diego, CA who loves to program, game, travel, and exercise.
         I've worked on a wide range of projects from more typical things like web development and Android apps to newer fields like blockchain and augmented/virtual reality.
       </p>
-      <br/>
 
       <!-- Professional Experience header -->
-      <div class="d-flex align-items-center">
-        <img src="res/icons/office.svg" height="50px" alt="[Office Icon]"/>
-        <h1>Professional Experience</h1>
+      <div class="d-flex align-items-center section-heading">
+        <img src="res/icons/office.svg" height="50px" alt=""/>
+        <h2>Professional Experience</h2>
       </div>
 
       <!-- Professional Experience content -->
@@ -111,9 +118,9 @@
       <p>For additional information about my professional background, please refer to <a href="res/downloads/jeff_tellew_resume.pdf">my resume</a>.</p>
 
       <!-- Education header -->
-      <div class="d-flex align-items-center">
-        <img src="res/icons/school-24px.svg" height="50px" alt="[Education Icon]"/>
-        <h1>Education</h1>
+      <div class="d-flex align-items-center section-heading">
+        <img src="res/icons/school-24px.svg" height="50px" alt=""/>
+        <h2>Education</h2>
       </div>
 
       <!-- Education content -->
@@ -124,16 +131,15 @@
 </div>
 
 <div class="container border-bottom">
-  <div class="d-flex align-items-center">
-    <img src="res/icons/experience.svg" height="50px" alt="[Projects Icon]"/>
-    <h1 id="projects-header">Projects</h1>
+  <div class="d-flex align-items-center section-heading">
+    <img src="res/icons/experience.svg" height="50px" alt=""/>
+    <h2 id="projects-header">Projects</h2>
   </div>
-  <br/>
 
   <!-- JAEGER -->
   <div class="row">
     <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
-      <img src="res/img/jaeger.png" width="100%" class="project-img"/>
+      <img src="res/img/jaeger.png" width="100%" class="project-img" alt="The JAEGER Forward Command Post operator GUI"/>
     </div>
 
     <div class="col-12 col-md-8">
@@ -153,7 +159,7 @@
 
       <p>
         <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/jaeger" role="button">
-          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[JAEGER GitHub button]"/>
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt=""/>
           <span>View the project on GitHub</span>
         </a>
       </p>
@@ -163,7 +169,7 @@
   <!-- CertificateChain -->
   <div class="row">
     <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
-      <img src="res/img/certificatechain.jpeg" width="100%" class="project-img"/>
+      <img src="res/img/certificatechain.jpeg" width="100%" class="project-img" alt="CertificateChain web application interface"/>
     </div>
 
     <div class="col-12 col-md-8">
@@ -185,19 +191,17 @@
 
       <p>
         <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/certificatechain" role="button">
-          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[CertificateChain GitHub button]"/>
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt=""/>
           <span>View the project on GitHub</span>
         </a>
       </p>
     </div>
   </div>
 
-  <br/>
-
   <!-- UltraTracker -->
   <div class="row">
     <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
-      <img src="res/img/ultratracker.gif" width="100%" class="project-img"/>
+      <img src="res/img/ultratracker.gif" width="100%" class="project-img" alt="UltraTracker augmented reality ultrasound overlay in motion"/>
     </div>
 
     <div class="col-12 col-md-8">
@@ -224,12 +228,10 @@
     </div>
   </div>
 
-  <br/>
-
   <!-- MunchEase -->
   <div class="row">
     <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
-      <img src="res/img/munchease.jpg" width="100%" class="project-img"/>
+      <img src="res/img/munchease.jpg" width="100%" class="project-img" alt="The MunchEase Android app group ballot screen"/>
     </div>
 
     <div class="col-12 col-md-8">
@@ -250,19 +252,17 @@
 
       <p>
         <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/MunchEase" role="button">
-          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[MunchEase GitHub button]"/>
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt=""/>
           <span>View the project on GitHub</span>
         </a>
       </p>
     </div>
   </div>
 
-  <br/>
-
   <!-- Prometheus -->
   <div class="row">
     <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
-      <img src="res/img/prometheus.jpg" width="100%" class="project-img"/>
+      <img src="res/img/prometheus.jpg" width="100%" class="project-img" alt="Gameplay from the Prometheus tower defense game"/>
     </div>
 
     <div class="col-12 col-md-8">
@@ -287,7 +287,7 @@
         <div class="col-12 col-sm-6">
           <p>
             <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/prometheus" role="button">
-              <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[Prometheus GitHub button]"/>
+              <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt=""/>
               <span>View the project on GitHub</span>
             </a>
           </p>
@@ -295,7 +295,7 @@
         <div class="col-12 col-sm-6">
           <p>
             <a class="btn btn-secondary btn-md img-btn" href="res/downloads/TowerDefense.jar" role="button" download>
-              <img class="icon-square" src="res/icons/down_arrow.svg" height="30px" alt="[Prometheus Download button]"/>
+              <img class="icon-square" src="res/icons/down_arrow.svg" height="30px" alt=""/>
               <span>Download the Game</span>
             </a>
           </p>
@@ -305,10 +305,10 @@
   </div>
 </div>
 
-<br/>
-
-<div class="row justify-content-center">
-  <p>Header animation by <a href="https://www.beeple-crap.com/">Beeple</a>. Icons from <a href="https://www.svgrepo.com/">svgrepo.com</a> or their respective official websites.</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <p>Header animation by <a href="https://www.beeple-crap.com/">Beeple</a>. Icons from <a href="https://www.svgrepo.com/">svgrepo.com</a> or their respective official websites.</p>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

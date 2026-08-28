@@ -11,6 +11,15 @@
     --accent-color: #333333;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/*Keeps anchor targets clear of the fixed navbar*/
+:target {
+    scroll-margin-top: 4.5rem;
+}
+
 body {
     padding-top: 3em; /*Keeps navbar from clipping stuff*/
     padding-bottom: 2em;
@@ -51,6 +60,7 @@ ul {
     background: #dee2e6;
     border: 1px solid #dee2e6;
     border-radius: 5px;
+    padding: 0.1em 0.3em;
     font-weight: bold;
 }
 
@@ -98,4 +108,24 @@ ul {
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     z-index: -1;
+}
+
+/*
+==========================================================================
+ *** SECTION HEADING STYLES ***
+==========================================================================
+*/
+
+.section-heading {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-heading:first-child {
+    margin-top: 0;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+    margin-left: 0.5rem;
 }
