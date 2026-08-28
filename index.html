@@ -76,7 +76,7 @@
 <div class="container border-bottom">
   <div class="row d-flex align-items-center">
     <div class="col-4">
-      <img src="res/img/headshot.jpg" width="100%"/>
+      <img src="res/img/me_sena_momo.jpg" width="100%" class="project-img"/>
     </div>
     <div class="col-8">
       <!-- About Me header -->
@@ -94,6 +94,22 @@
       </p>
       <br/>
 
+      <!-- Professional Experience header -->
+      <div class="row d-flex align-items-left">
+        <img src="res/icons/office.svg" height="50px" alt="[Office Icon]"/>
+        <h1>Professional Experience</h1>
+      </div>
+
+      <!-- Professional Experience content -->
+      <p>
+        In 2025, I had the honor of being selected for Lockheed Martin's prestigious Engineering Leadership Development Program (ELDP), a three-year rotational program designed to accelerate growth for high-performing early-career engineers.
+        I'm currently a part of the Terminal High Altitude Area Defense (THAAD) program, working on <span class="skill">digital transformation and process improvement</span> for my first rotation.
+      </p>
+
+      <p>Prior to joining ELDP, I worked on <span class="skill">embedded systems development for simulation</span> for the THAAD system, and before that, I did <span class="skill">web development</span> for Epic Systems in Wisconsin.</p>
+
+      <p>For additional information about my professional background, please refer to <a href="res/downloads/jeff_tellew_resume.pdf">my resume</a>.</p>
+
       <!-- Education header -->
       <div class="row d-flex align-items-left">
         <img src="res/icons/school-24px.svg" height="50px" alt="[Education Icon]"/>
@@ -102,7 +118,7 @@
 
       <!-- Education content -->
       <p>I graduated in 2021 with a B.S. in Computer Science from the University of California, Santa Barbara.</p>
-      <p>I also had the opportunity to study abroad at Lund University in Lund, Sweden, where I got to experience new things like functional public transportation and temperatures below 50° F.</p>
+      <p>I also had the opportunity to study abroad at Lund University in Lund, Sweden.</p>
     </div>
   </div>
 </div>
@@ -113,6 +129,36 @@
     <h1 id="projects-header">Projects</h1>
   </div>
   <br/>
+
+  <!-- JAEGER -->
+  <div class="row">
+    <div class="col-4 align-self-center">
+      <img src="res/img/jaeger.png" width="100%" class="project-img"/>
+    </div>
+
+    <div class="col-8">
+      <h3>JAEGER</h3>
+      <p>
+        As part of ELDP, my entire class of 27 engineers worked together on a lifecycle project for a <span class="skill">directed-energy drone defense system</span>, where I took on the role of software lead for the Forward Command Post (FCP) element.
+      </p>
+
+      <p>
+        I was responsible for designing the software architecture and implementing the GUI, which I did using <span class="skill">Python and Tkinter/PyQt6</span>, as well as the networking components, which were required to communicate with other elements of the system.
+        My GUI also integrated with a <span class="skill">computer vision</span> component to detect and track drones and display targeting data to the operator. I also honed my skills in <span class="skill">AI-assisted software development</span>, leveraging tools to enhance productivity and code quality.
+      </p>
+
+      <p>
+        The project culminated in a real-world demo of the system's capabilities at Lockheed Martin's Waterton facility, where we showcased the system's ability to <span class="skill">detect and track drones in real-time</span>, though we weren't allowed to actually take them down.
+      </p>
+
+      <p>
+        <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/jaeger" role="button">
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[JAEGER GitHub button]"/>
+          <span>View the project on GitHub</span>
+        </a>
+      </p>
+    </div>
+  </div>
 
   <!-- CertificateChain -->
   <div class="row">
@@ -125,6 +171,7 @@
       <p>
         As part of my internship at the UC San Diego Division of Biomedical Informatics (DBMI), I created CertificateChain, a decentralized database system built on the <span class="skill">Ethereum Blockchain</span>, culminating in a <a href="https://doi.org/10.1093/jamiaopen/ooac019">publication in JAMIA Open</a>.
       </p>
+
       <p>
         Biomedical informatics requires the usage of public health datasets, which typically require certifications before researchers are granted access.
         Prior to this, DBMI staff had to request these certificates by email, resulting in a number of problems outlined in the paper.
@@ -158,6 +205,7 @@
       <p>
         During another internship at UCSD, this time in the Simulation Training Center (STC), I worked on UltraTracker, an <span class="skill">augmented reality</span> training system for students at the UCSD School of Medicine.
       </p>
+
       <p>
         Soon-to-be doctors at the STC perform training exercises intended to give them experience in real-life situations without worrying about real-life consequences.
         One of the situations they train for is called a <a href="https://my.clevelandclinic.org/health/treatments/23927-central-venous-catheter">central line</a>, and is notoriously difficult to learn.
@@ -190,6 +238,7 @@
         MunchEase is an <span class="skill">Android app</span> that aims to democratize one of society's greatest traditions: going out for food with your friends or family.
         Gone are the days of shouting matches and "I wanted X!" vs "But I wanted Y!"
       </p>
+
       <p>
         MunchEase is implemented in <span class="skill">Java</span> and allows users to create or join a group, denoted by a unique group ID and hosted on <span class="skill">Firebase</span>.
         Group members can then add restaurants to the group's ballot, pulling information from the Yelp <span class="skill">API</span> to show data in-app for ease and convenience.
@@ -222,6 +271,7 @@
         Though I had dabbled in game modding and development before (see below), my first formal step on the path to becoming software engineer was when I signed up for AP Computer Science in 2015.
         The end result of that class was a simple tower defense game, named Prometheus.
       </p>
+
       <p>
         Written entirely in <span class="skill">Java</span>, Prometheus is far from a masterpiece -- it was, after all, the first thing I ever truly made with code. It doesn't elicit the same reaction you might have when you read about blockchains or augmented reality.
         And yet, I can't bring myself to leave it off this page because of a much simpler reason.
@@ -253,32 +303,6 @@
       </div>
     </div>
   </div>
-
-  <br/>
-
-  <!-- Maps -->
-  <div class="row">
-    <div class="col-4 align-self-center">
-      <img src="res/img/apex.png" width="100%" class="project-img"/>
-    </div>
-
-    <div class="col-8">
-      <h3>Team Fortress 2 Maps</h3>
-      <p>
-        In late 2014, I organized a community Team Fortress 2 (TF2) tournament where participants from around the globe competed against each other to see who was the best of the best.
-        In this tournament, the winner was decided by speed. The person with the fastest time to complete three different levels took home the first place prize.
-      </p>
-
-      <p>
-        In addition to organizing community crowdfunding for prizes, scheduling, and other administrative duties, I created one of the custom levels for the tournament.
-        This was the culmination of what had been about 3 years of developing what are known as "maps" for the game, the worlds within which players actually play the game.
-      </p>
-
-      <p>
-        This interest in creating my own content for Valve's <span class="skill">Source Engine</span> using their <span class="skill">Hammer Editor</span> was the first time I dipped my toes in the vast ocean of computer science.
-      </p>
-    </div>
-  </div>
 </div>
 
 <br/>
@@ -288,8 +312,7 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
