@@ -9,6 +9,8 @@
 :root {
     --main-color: var(--blue);
     --accent-color: #333333;
+    --grain-opacity: 0.25;
+    --grain-scale: 0.8;
 }
 
 html {
@@ -87,6 +89,27 @@ ul {
     position: relative;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.7);
+}
+
+/*Film grain over the video -- masks compression artifacts the way
+  AV1 grain synthesis does: strip noise at encode, add it back at playback*/
+.video-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)'/%3E%3C/svg%3E");
+    opacity: var(--grain-opacity);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/*Keeps hero text above the grain layer*/
+.video-background .container {
+    position: relative;
+    z-index: 1;
 }
 
 .video-background h1 {
