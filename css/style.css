@@ -71,6 +71,13 @@ ul {
     border-radius: 5px;
 }
 
+/*Video standing in for an animated project image*/
+video.project-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /*
 ==========================================================================
  *** JUMBOTRON STYLES ***
