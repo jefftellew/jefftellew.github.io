@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,14 +7,24 @@
 
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,400,600,700" rel="stylesheet">
 
-  <title>jefftellew.github.io</title>
+  <title>Jeff Tellew — Software Engineer</title>
+  <meta name="description" content="Jeff Tellew is a full-stack software engineer in San Diego, CA. Projects spanning drone defense systems, blockchain, augmented reality, and Android." />
+
+  <link rel="icon" href="res/icons/face.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jefftellew.github.io/" />
+  <meta property="og:title" content="Jeff Tellew — Software Engineer" />
+  <meta property="og:description" content="Full-stack software engineer in San Diego, CA. Projects spanning drone defense systems, blockchain, augmented reality, and Android." />
+  <meta property="og:image" content="https://jefftellew.github.io/res/img/jaeger.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="/">
     <span>JEFF<strong>TELLEW</strong></span>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,41 +40,40 @@
         <a class="nav-link" href="#projects-header">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="res/downloads/jeff_tellew_resume.pdf">Resume</a>
+        <a class="nav-link" href="res/downloads/jeff_tellew_resume.pdf" target="_blank" rel="noopener">Resume</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="jumbotron video-background">
-  <video class="jumbotron-video" preload muted autoplay loop>
+  <video class="jumbotron-video" poster="res/img/hero-poster.jpg" preload="auto" muted autoplay loop playsinline>
     <source src="./res/beeple_built.mp4" type="video/mp4">
   </video>
   <div class="container">
     <h1 class="bold">jefftellew.github.io</h1>
-    <p>The personal page of Jeff Tellew</p>
-    <br/>
+    <p class="mb-4">The personal page of Jeff Tellew</p>
     <div class="row">
-      <div class="col-3">
+      <div class="col-12 col-sm-4">
         <p>
           <a class="btn btn-primary btn-lg img-btn" href="res/downloads/jeff_tellew_resume.pdf" role="button" download>
-            <img class="icon-square" src="res/icons/down_arrow.svg" height="50px" alt="[Resume Download Button]"/>
+            <img class="icon-square" src="res/icons/down_arrow.svg" height="50px" alt=""/>
             <span>Resume</span>
           </a>
         </p>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-sm-4">
         <p>
           <a class="btn btn-primary btn-lg img-btn" href="https://github.com/jefftellew" role="button">
-            <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="50px" alt="[GitHub Button]"/>
+            <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="50px" alt=""/>
             <span>GitHub</span>
           </a>
         </p>
       </div>
-      <div class="col-3">
+      <div class="col-12 col-sm-4">
         <p>
           <a class="btn btn-primary btn-lg img-btn" href="https://www.linkedin.com/in/jeffrey-tellew/" role="button">
-            <img class="icon-square" src="res/icons/linkedin.svg" height="50px" alt="[LinkedIn Button]"/>
+            <img class="icon-square" src="res/icons/linkedin.svg" height="50px" alt=""/>
             <span>LinkedIn</span>
           </a>
         </p>
@@ -75,16 +84,15 @@
 
 <div class="container border-bottom">
   <div class="row d-flex align-items-center">
-    <div class="col-4">
-      <img src="res/img/headshot.jpg" width="100%"/>
+    <div class="col-8 offset-2 col-md-4 offset-md-0 mb-3 mb-md-0">
+      <img src="res/img/me_sena_momo.jpg" width="100%" class="project-img" alt="Jeff Tellew with two friends"/>
     </div>
-    <div class="col-8">
+    <div class="col-12 col-md-8">
       <!-- About Me header -->
-      <div class="row d-flex align-items-left">
-        <img src="res/icons/face.svg" height="50px" alt="[About Me Icon]"/>
-        <h1>About me</h1>
+      <div class="d-flex align-items-center section-heading">
+        <img src="res/icons/face.svg" height="50px" alt=""/>
+        <h2>About me</h2>
       </div>
-      <br/>
 
       <!-- About Me content -->
       <h3>Hi, I'm <b>Jeff</b>!</h3>
@@ -92,39 +100,93 @@
         I'm a full-stack software engineer from San Diego, CA who loves to program, game, travel, and exercise.
         I've worked on a wide range of projects from more typical things like web development and Android apps to newer fields like blockchain and augmented/virtual reality.
       </p>
-      <br/>
+
+      <!-- Professional Experience header -->
+      <div class="d-flex align-items-center section-heading">
+        <img src="res/icons/office.svg" height="50px" alt=""/>
+        <h2>Professional Experience</h2>
+      </div>
+
+      <!-- Professional Experience content -->
+      <p>
+        In 2025, I had the honor of being selected for Lockheed Martin's prestigious Engineering Leadership Development Program (ELDP), a three-year rotational program designed to accelerate growth for high-performing early-career engineers.
+        I'm currently a part of the Terminal High Altitude Area Defense (THAAD) program, working on <span class="skill">digital transformation and process improvement</span> for my first rotation.
+      </p>
+
+      <p>Prior to joining ELDP, I worked on <span class="skill">embedded systems development for simulation</span> for the THAAD system, and before that, I did <span class="skill">web development</span> for Epic Systems in Wisconsin.</p>
+
+      <p>For additional information about my professional background, please refer to <a href="res/downloads/jeff_tellew_resume.pdf">my resume</a>.</p>
 
       <!-- Education header -->
-      <div class="row d-flex align-items-left">
-        <img src="res/icons/school-24px.svg" height="50px" alt="[Education Icon]"/>
-        <h1>Education</h1>
+      <div class="d-flex align-items-center section-heading">
+        <img src="res/icons/school-24px.svg" height="50px" alt=""/>
+        <h2>Education</h2>
       </div>
 
       <!-- Education content -->
       <p>I graduated in 2021 with a B.S. in Computer Science from the University of California, Santa Barbara.</p>
-      <p>I also had the opportunity to study abroad at Lund University in Lund, Sweden, where I got to experience new things like functional public transportation and temperatures below 50° F.</p>
+      <p>I also had the opportunity to study abroad at Lund University in Lund, Sweden, for the winter 2019 semester.</p>
     </div>
   </div>
 </div>
 
 <div class="container border-bottom">
-  <div class="row d-flex align-items-left">
-    <img src="res/icons/experience.svg" height="50px" alt="[Projects Icon]"/>
-    <h1 id="projects-header">Projects</h1>
+  <div class="d-flex align-items-center section-heading">
+    <img src="res/icons/experience.svg" height="50px" alt=""/>
+    <h2 id="projects-header">Projects</h2>
   </div>
-  <br/>
+
+  <!-- JAEGER -->
+  <div class="row">
+    <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
+      <img src="res/img/jaeger.png" width="100%" class="project-img" alt="The JAEGER Forward Command Post operator GUI"/>
+    </div>
+
+    <div class="col-12 col-md-8">
+      <div class="d-flex flex-wrap align-items-center project-heading">
+        <h3>JAEGER</h3>
+        <a class="btn btn-primary btn-sm img-btn" href="https://github.com/jefftellew/jaeger" role="button">
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="20px" alt=""/>
+          <span>View on GitHub</span>
+        </a>
+      </div>
+      <p>
+        As part of ELDP, my entire class of 27 engineers worked together on a lifecycle project for a <span class="skill">directed-energy drone defense system</span>, where I took on the role of software lead for the Forward Command Post (FCP) element.
+      </p>
+
+      <p>
+        I was responsible for designing the software architecture and implementing the GUI, which I did using <span class="skill">Python and Tkinter/PyQt6</span>, as well as the networking components, which were required to communicate with other elements of the system.
+        My GUI also integrated with a <span class="skill">computer vision</span> component to detect and track drones and display targeting data to the operator. I also honed my skills in <span class="skill">AI-assisted software development</span>, leveraging tools to enhance productivity and code quality.
+      </p>
+
+      <p>
+        The project culminated in a real-world demo of the system's capabilities at Lockheed Martin's Waterton facility, where we showcased the system's ability to <span class="skill">detect and track drones in real-time</span>, though we weren't allowed to actually take them down.
+      </p>
+    </div>
+  </div>
 
   <!-- CertificateChain -->
   <div class="row">
-    <div class="col-4 align-self-center">
-      <img src="res/img/certificatechain.jpeg" width="100%" class="project-img"/>
+    <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
+      <img src="res/img/certificatechain.jpeg" width="100%" class="project-img" alt="CertificateChain web application interface"/>
     </div>
 
-    <div class="col-8">
-      <h3>CertificateChain</h3>
+    <div class="col-12 col-md-8">
+      <div class="d-flex flex-wrap align-items-center project-heading">
+        <h3>CertificateChain</h3>
+        <a class="btn btn-primary btn-sm img-btn" href="https://github.com/jefftellew/certificatechain" role="button">
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="20px" alt=""/>
+          <span>View on GitHub</span>
+        </a>
+        <a class="btn btn-primary btn-sm img-btn" href="https://doi.org/10.1093/jamiaopen/ooac019" role="button" target="_blank" rel="noopener">
+          <img class="icon-square" src="res/icons/school-24px.svg" height="20px" alt=""/>
+          <span>Read the Paper</span>
+        </a>
+      </div>
       <p>
         As part of my internship at the UC San Diego Division of Biomedical Informatics (DBMI), I created CertificateChain, a decentralized database system built on the <span class="skill">Ethereum Blockchain</span>, culminating in a <a href="https://doi.org/10.1093/jamiaopen/ooac019">publication in JAMIA Open</a>.
       </p>
+
       <p>
         Biomedical informatics requires the usage of public health datasets, which typically require certifications before researchers are granted access.
         Prior to this, DBMI staff had to request these certificates by email, resulting in a number of problems outlined in the paper.
@@ -135,29 +197,26 @@
         To perform data collection in preparation for the paper, I wrote <span class="skill">BASH</span> scripts to automate testing which ran on a few <span class="skill">AWS Virtual Machines</span>.
         I then did the data analysis with <span class="skill">R</span> and created graphics for the paper.
       </p>
-
-      <p>
-        <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/certificatechain" role="button">
-          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[CertificateChain GitHub button]"/>
-          <span>View the project on GitHub</span>
-        </a>
-      </p>
     </div>
   </div>
 
-  <br/>
-
   <!-- UltraTracker -->
   <div class="row">
-    <div class="col-4 align-self-center">
-      <img src="res/img/ultratracker.gif" width="100%" class="project-img"/>
+    <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
+      <video class="project-img" width="100%" poster="res/img/ultratracker-poster.jpg" muted autoplay loop playsinline
+             role="img" aria-label="UltraTracker augmented reality ultrasound overlay in motion">
+        <source src="res/img/ultratracker.mp4" type="video/mp4">
+      </video>
     </div>
 
-    <div class="col-8">
-      <h3>UltraTracker</h3>
+    <div class="col-12 col-md-8">
+      <div class="d-flex flex-wrap align-items-center project-heading">
+        <h3>UltraTracker</h3>
+      </div>
       <p>
         During another internship at UCSD, this time in the Simulation Training Center (STC), I worked on UltraTracker, an <span class="skill">augmented reality</span> training system for students at the UCSD School of Medicine.
       </p>
+
       <p>
         Soon-to-be doctors at the STC perform training exercises intended to give them experience in real-life situations without worrying about real-life consequences.
         One of the situations they train for is called a <a href="https://my.clevelandclinic.org/health/treatments/23927-central-venous-catheter">central line</a>, and is notoriously difficult to learn.
@@ -176,20 +235,25 @@
     </div>
   </div>
 
-  <br/>
-
   <!-- MunchEase -->
   <div class="row">
-    <div class="col-4 align-self-center">
-      <img src="res/img/munchease.jpg" width="100%" class="project-img"/>
+    <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
+      <img src="res/img/munchease.jpg" width="100%" class="project-img" alt="The MunchEase Android app group ballot screen"/>
     </div>
 
-    <div class="col-8">
-      <h3>MunchEase</h3>
+    <div class="col-12 col-md-8">
+      <div class="d-flex flex-wrap align-items-center project-heading">
+        <h3>MunchEase</h3>
+        <a class="btn btn-primary btn-sm img-btn" href="https://github.com/jefftellew/MunchEase" role="button">
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="20px" alt=""/>
+          <span>View on GitHub</span>
+        </a>
+      </div>
       <p>
         MunchEase is an <span class="skill">Android app</span> that aims to democratize one of society's greatest traditions: going out for food with your friends or family.
         Gone are the days of shouting matches and "I wanted X!" vs "But I wanted Y!"
       </p>
+
       <p>
         MunchEase is implemented in <span class="skill">Java</span> and allows users to create or join a group, denoted by a unique group ID and hosted on <span class="skill">Firebase</span>.
         Group members can then add restaurants to the group's ballot, pulling information from the Yelp <span class="skill">API</span> to show data in-app for ease and convenience.
@@ -198,30 +262,32 @@
       <p>
         So ditch the hangry mess and revolutionize your planning process today with MunchEase! It even has dark mode!
       </p>
-
-      <p>
-        <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/MunchEase" role="button">
-          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[MunchEase GitHub button]"/>
-          <span>View the project on GitHub</span>
-        </a>
-      </p>
     </div>
   </div>
 
-  <br/>
-
   <!-- Prometheus -->
   <div class="row">
-    <div class="col-4 align-self-center">
-      <img src="res/img/prometheus.jpg" width="100%" class="project-img"/>
+    <div class="col-12 col-md-4 align-self-center mb-3 mb-md-0">
+      <img src="res/img/prometheus.jpg" width="100%" class="project-img" alt="Gameplay from the Prometheus tower defense game"/>
     </div>
 
-    <div class="col-8">
-      <h3>Prometheus</h3>
+    <div class="col-12 col-md-8">
+      <div class="d-flex flex-wrap align-items-center project-heading">
+        <h3>Prometheus</h3>
+        <a class="btn btn-primary btn-sm img-btn" href="https://github.com/jefftellew/prometheus" role="button">
+          <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="20px" alt=""/>
+          <span>View on GitHub</span>
+        </a>
+        <a class="btn btn-secondary btn-sm img-btn" href="https://github.com/jefftellew/prometheus/releases/download/v1.0/TowerDefense.jar" role="button">
+          <img class="icon-square" src="res/icons/down_arrow.svg" height="20px" alt=""/>
+          <span>Download the Game</span>
+        </a>
+      </div>
       <p>
         Though I had dabbled in game modding and development before (see below), my first formal step on the path to becoming software engineer was when I signed up for AP Computer Science in 2015.
         The end result of that class was a simple tower defense game, named Prometheus.
       </p>
+
       <p>
         Written entirely in <span class="skill">Java</span>, Prometheus is far from a masterpiece -- it was, after all, the first thing I ever truly made with code. It doesn't elicit the same reaction you might have when you read about blockchains or augmented reality.
         And yet, I can't bring myself to leave it off this page because of a much simpler reason.
@@ -232,64 +298,18 @@
         If you'd like to play the game, you'll need <a href="https://www.java.com/en/download/windows_manual.jsp">a JRE installation</a>.
         When you download the game, your browser might say that the file can harm your computer, but I promise it won't. It's open-source, so you can verify it yourself!
       </p>
-
-      <div class="row">
-        <div class="col-5">
-          <p>
-            <a class="btn btn-primary btn-md img-btn" href="https://github.com/jefftellew/prometheus" role="button">
-              <img class="icon-square" src="res/icons/GitHub-Mark-64px.png" height="30px" alt="[Prometheus GitHub button]"/>
-              <span>View the project on GitHub</span>
-            </a>
-          </p>
-        </div>
-        <div class="col-5">
-          <p>
-            <a class="btn btn-secondary btn-md img-btn" href="res/downloads/TowerDefense.jar" role="button" download>
-              <img class="icon-square" src="res/icons/down_arrow.svg" height="30px" alt="[Prometheus Download button]"/>
-              <span>Download the Game</span>
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <br/>
-
-  <!-- Maps -->
-  <div class="row">
-    <div class="col-4 align-self-center">
-      <img src="res/img/apex.png" width="100%" class="project-img"/>
-    </div>
-
-    <div class="col-8">
-      <h3>Team Fortress 2 Maps</h3>
-      <p>
-        In late 2014, I organized a community Team Fortress 2 (TF2) tournament where participants from around the globe competed against each other to see who was the best of the best.
-        In this tournament, the winner was decided by speed. The person with the fastest time to complete three different levels took home the first place prize.
-      </p>
-
-      <p>
-        In addition to organizing community crowdfunding for prizes, scheduling, and other administrative duties, I created one of the custom levels for the tournament.
-        This was the culmination of what had been about 3 years of developing what are known as "maps" for the game, the worlds within which players actually play the game.
-      </p>
-
-      <p>
-        This interest in creating my own content for Valve's <span class="skill">Source Engine</span> using their <span class="skill">Hammer Editor</span> was the first time I dipped my toes in the vast ocean of computer science.
-      </p>
     </div>
   </div>
 </div>
 
-<br/>
-
-<div class="row justify-content-center">
-  <p>Header animation by <a href="https://www.beeple-crap.com/">Beeple</a>. Icons from <a href="https://www.svgrepo.com/">svgrepo.com</a> or their respective official websites.</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <p>Header animation by <a href="https://www.beeple-crap.com/">Beeple</a>. Icons from <a href="https://www.svgrepo.com/">svgrepo.com</a> or their respective official websites.</p>
+  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="./js/jquery-3.7.1.slim.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
